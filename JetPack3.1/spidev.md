@@ -137,15 +137,25 @@ ls /dev/spi*
 
 ## 参考
 <a name='1'>
-[1] [https://elinux.org/Jetson/TX1_SPI#Installing_SPIdev_Kernel_Module](https://elinux.org/Jetson/TX1_SPI#Installing_SPIdev_Kernel_Module)<br>
-<a name='2'>
-[2] [https://elinux.org/Jetson/TX1_SPI#Installing_DTC_Tool](https://elinux.org/Jetson/TX1_SPI#Installing_DTC_Tool)<br>
-<a name='3'>
-[3] [https://devtalk.nvidia.com/default/topic/1008929/jetson-tx2/enabling-spi-and-spidev-on-the-tx2/](https://devtalk.nvidia.com/default/topic/1008929/jetson-tx2/enabling-spi-and-spidev-on-the-tx2/)<br>
-<a name='4'>
-[4] [https://devtalk.nvidia.com/default/topic/1020708/method-to-modify-use-different-device-tree-in-r28-1/](https://devtalk.nvidia.com/default/topic/1020708/method-to-modify-use-different-device-tree-in-r28-1/)<br>
-<a name='5'>
-[5] [https://devtalk.nvidia.com/default/topic/1023007/how-to-use-uart0-as-normal-uart-port-on-r28-1-/?offset=12](https://devtalk.nvidia.com/default/topic/1023007/how-to-use-uart0-as-normal-uart-port-on-r28-1-/?offset=12)<br>
 
+[1] [https://elinux.org/Jetson/TX1_SPI#Installing_SPIdev_Kernel_Module](https://elinux.org/Jetson/TX1_SPI#Installing_SPIdev_Kernel_Module)
+
+<a name='2'>
+
+[2] [https://elinux.org/Jetson/TX1_SPI#Installing_DTC_Tool](https://elinux.org/Jetson/TX1_SPI#Installing_DTC_Tool)
+
+<a name='3'>
+
+[3] [https://devtalk.nvidia.com/default/topic/1008929/jetson-tx2/enabling-spi-and-spidev-on-the-tx2/](https://devtalk.nvidia.com/default/topic/1008929/jetson-tx2/enabling-spi-and-spidev-on-the-tx2/)
+
+<a name='4'>
+
+[4] [https://devtalk.nvidia.com/default/topic/1020708/method-to-modify-use-different-device-tree-in-r28-1/](https://devtalk.nvidia.com/default/topic/1020708/method-to-modify-use-different-device-tree-in-r28-1/)
+
+<a name='5'>
+
+[5] [https://devtalk.nvidia.com/default/topic/1023007/how-to-use-uart0-as-normal-uart-port-on-r28-1-/?offset=12](https://devtalk.nvidia.com/default/topic/1023007/how-to-use-uart0-as-normal-uart-port-on-r28-1-/?offset=12)
+
+<br>
 
 Powered by [FaBo](http://www.fabo.io)
