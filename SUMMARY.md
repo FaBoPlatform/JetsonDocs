@@ -7,10 +7,10 @@
     * [OpenCV 3.4.0 インストール](JetPack3.1/python2.7/opencv3.4.0.md)
     * [Tensorflow 1.4.1 インストール](JetPack3.1/python2.7/tensorflow1.4.1.md)
   * Faboライブラリインストール
-    * PWMサーボ PCA9685
-    * モーター PCAL6408
-    * 距離センサー LidarLiteV3
-    * 距離センサー VL53L0X
+    * [PWMサーボ PCA9685](JetPack3.1/libfabo/pca9685.md)
+    * [モーター PCAL6408](JetPack3.1/libfabo/pcal6408.md)
+    * [距離センサー LidarLiteV3](JetPack3.1/libfabo/lidarlitev3.md)
+    * [距離センサー VL53L0X](JetPack3.1/libfabo/vl53l0x.md)
   * [SPIdev 有効化](JetPack3.1/spidev.md)
   * [SPI 動作確認](JetPack3.1/spi.md)
   * I2C 動作確認
