@@ -1,4 +1,6 @@
-# Jetson TX2 SPIdevを有効化
+# SPIdev 有効化
+Jetson TX2 Docs>JetPack3.1>SPIdev有効化
+<hr>
 
 ###### メモ
 * Jetson TX2はtegra186
@@ -18,7 +20,7 @@ cat /proc/modules
 ls /dev/spi*
 ```
 
-## Install SPIdev module [*C]
+## Install SPIdev module [*1]
 ```
 wget --no-check-certificate https://developer.nvidia.com/embedded/dlc/l4t-sources-28-1 -O sources_r28.1.tbz2
 tar -xvf sources_r28.1.tbz2
@@ -52,15 +54,21 @@ depmod
 #spi3 = "/spi@3240000";
 ```
 
-## DTC Tool [*D]
+## DTC Tool [*2]
 ```
 apt-get update
 apt-get install device-tree-compiler
 ```
 
-## SPI Configuration [*B]
+## SPI Configuration [*3]
 ```
 cd /boot/dtb
+## get DTB from image. [*4]
+# メモ：/dev/mmcblk0p15が正しいパーティションであることを確認する。デコンパイル出来なければ正しくない。
+# メモ：正しいパーティションであれば、test.dtsとtegra186-quill-p3310-1000-c03-00-base.dtsは同一になる。
+dd if=/dev/mmcblk0p15 of=test.dtb
+dtc -I dtb -O dts -o test.dts test.dtb
+
 # backup
 cp tegra186-quill-p3310-1000-c03-00-base.dtb tegra186-quill-p3310-1000-c03-00-base.dtb.bak
 # decompile
@@ -68,7 +76,7 @@ dtc -I dtb -O dts -o tegra186-quill-p3310-1000-c03-00-base.dts tegra186-quill-p3
 
 # edit tegra186-quill-p3310-1000-c03-00-base.dts
 # spi@3240000 に書き加える
-# The SPI pin group in the J21 looks like map to TX2 SPI4, You may need enable the spidev node to spi@3240000 [*B]
+# The SPI pin group in the J21 looks like map to TX2 SPI4, You may need enable the spidev node to spi@3240000 [*3]
 vi tegra186-quill-p3310-1000-c03-00-base.dts
         spi@3240000 {
                 compatible = "nvidia,tegra186-spi";
@@ -103,7 +111,7 @@ vi tegra186-quill-p3310-1000-c03-00-base.dts
 # compile
 dtc -I dts -O dtb -o tegra186-quill-p3310-1000-c03-00-base.dtb tegra186-quill-p3310-1000-c03-00-base.dts
 ```
-## dtb into /dev/mmcblk0p15 [*A]
+## dtb into /dev/mmcblk0p15 [*5]
 ```
 dd if=/boot/dtb/tegra186-quill-p3310-1000-c03-00-base.dtb of=/dev/mmcblk0p15
 ```
@@ -128,8 +136,11 @@ ls /dev/spi*
 >/dev/spidev3.0  /dev/spidev3.1  
 
 ## 参考
-  * [\*C] https://elinux.org/Jetson/TX1_SPI#Installing_SPIdev_Kernel_Module
-  * [\*D] https://elinux.org/Jetson/TX1_SPI#Installing_DTC_Tool
-  * [\*B] https://devtalk.nvidia.com/default/topic/1008929/jetson-tx2/enabling-spi-and-spidev-on-the-tx2/
-  * [\*A] https://devtalk.nvidia.com/default/topic/1023007/how-to-use-uart0-as-normal-uart-port-on-r28-1-/?offset=12
+  * [\*1] https://elinux.org/Jetson/TX1_SPI#Installing_SPIdev_Kernel_Module
+  * [\*2] https://elinux.org/Jetson/TX1_SPI#Installing_DTC_Tool
+  * [\*3] https://devtalk.nvidia.com/default/topic/1008929/jetson-tx2/enabling-spi-and-spidev-on-the-tx2/
+  * [\*4] https://devtalk.nvidia.com/default/topic/1020708/method-to-modify-use-different-device-tree-in-r28-1/
+  * [\*5] https://devtalk.nvidia.com/default/topic/1023007/how-to-use-uart0-as-normal-uart-port-on-r28-1-/?offset=12
 
+
+Powered by [FaBo](http://www.fabo.io)

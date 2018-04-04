@@ -1,16 +1,15 @@
-# SPI
+# SPIサンプル
+Jetson TX2 Docs>JetPack3.1>SPIサンプル
+<hr>
 
-# Jetson TX2でのSPIdev有効化方法
-Kernel Moduleのコンパイル、DTC再コンパイルが必要なので別記載。
-* [Jetson TX2でのSPIdev有効化方法](spidev.md)
 
 # 接続確認
 Faboの#104 Angle Brickで確認する。  
-spi-sample.py
 
+ソースコード[spi-sample.py](spi-sample.py)
 ```python
 # coding: utf-8
-# pip3 install spidev
+# pip install spidev
 
 import spidev
 import time
@@ -75,3 +74,4 @@ except KeyboardInterrupt:
 ```
 
 
+Powered by [FaBo](http://www.fabo.io)
