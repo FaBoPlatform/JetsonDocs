@@ -20,7 +20,8 @@ network={
 }
 ```
 pskの値を用いて以下のファイルを作成します。<br>
-IPアドレスを192.168.0.200に固定する例：<br>
+TX2のIPアドレスを192.168.0.200に固定する例：<br>
+gatewayは外とつながるルータのIPアドレス。この例では192.168.0.100。<br>
 ```
 sudo vi /etc/network/interfaces.d/wlan0_static
 sudo chmod 600 /etc/network/interfaces.d/wlan0_static
