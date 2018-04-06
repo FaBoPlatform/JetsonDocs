@@ -6,6 +6,15 @@
     * [Jupyter インストール](JetPack3.1/python2.7/jupyter.md)
     * [OpenCV 3.4.0 インストール](JetPack3.1/python2.7/opencv3.4.0.md)
     * [Tensorflow 1.4.1 インストール](JetPack3.1/python2.7/tensorflow1.4.1.md)
+  * Python 3.6環境の場合
+    * [Python 3.6 インストール](JetPack3.1/python3.6/python3.6.md)
+    * [pip インストール](JetPack3.1/python3.6/pip.md)
+    * [Jupyter インストール](JetPack3.1/python3.6/jupyter.md)
+    * [Build Tools インストール](JetPack3.1/python3.6/build_tools.md)
+    * [OpenCV 3.4.1 インストール](JetPack3.1/python3.6/opencv3.4.1.md)
+    * [Tensorflow 1.6.0 インストール](JetPack3.1/python3.6/tensorflow1.6.0.md)
+  * [CUDA deviceQuery ビルド](JetPack3.1/cuda_devicequery.md)
+  * [NVPMODEL](JetPack3.1/nvpmodel.md)
   * Faboライブラリインストール
     * [PWMサーボ PCA9685](JetPack3.1/libfabo/pca9685.md)
     * [モーター PCAL6408](JetPack3.1/libfabo/pcal6408.md)

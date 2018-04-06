@@ -18,7 +18,6 @@ sudo pip install --upgrade Pillow
 sudo pip install --upgrade smbus2
 sudo pip install --upgrade spidev
 sudo pip install --upgrade absl-py
-sudo pip install --upgrade sympy
 ```
 
 
