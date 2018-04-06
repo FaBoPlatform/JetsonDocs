@@ -29,7 +29,7 @@
   * [SPI Fabo #104 回転センサー](JetPack3.1/sample/sample_spi_104.md)
   * [I2C Fabo #210 LED](JetPack3.1/sample/sample_led.md)
   * [I2C Fabo #509 PWMサーボ](JetPack3.1/sample/sample_servo.md)
-  * [I2C モーター](JetPack3.1/sample/sample_motor.md)
+  * [I2C Fabo Shinobiモーター](JetPack3.1/sample/sample_motor.md)
   * [UART シリアル接続](JetPack3.1/sample/sample_uart_serial.md)
   * [WiFi 設定](JetPack3.1/setup/wifi.md)
 
