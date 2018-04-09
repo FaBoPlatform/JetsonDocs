@@ -33,6 +33,41 @@ sudo python sample_vl53l0x.py
 ```
 
 # 結果
-TX2には完全には対応していないので、80cm位までの距離を計測できる。
+距離を計測できる。
+```
+VL53L0X Start Ranging Address 0x29
+
+VL53L0X_GetDeviceInfo:
+Device Name : VL53L0X ES1 or later
+Device Type : VL53L0X
+Device ID : VL53L0CXV0DH/1$1
+ProductRevisionMajor : 1
+ProductRevisionMinor : 1
+API Status: 0 : No Error
+VL53L0X_BEST_ACCURACY_MODE
+API Status: 0 : No Error
+Timing 200 ms
+distance1 cm: 2
+distance1 cm: 8
+distance1 cm: 31
+distance1 cm: 39
+distance1 cm: 819
+distance1 cm: 10
+distance1 cm: 4
+distance1 cm: 3
+distance1 cm: 2
+distance1 cm: 2
+distance1 cm: 2
+distance1 cm: 4
+distance1 cm: 3
+distance1 cm: 5
+distance1 cm: 14
+distance1 cm: 819
+distance1 cm: 819
+distance1 cm: 70
+distance1 cm: 62
+distance1 cm: 819
+distance1 cm: 38
+```
 
 Powered by [FaBo](http://www.fabo.io)
