@@ -30,6 +30,9 @@
   * [I2C Fabo #210 LED](JetPack3.1/sample/sample_led.md)
   * [I2C Fabo #509 PWMサーボ](JetPack3.1/sample/sample_servo.md)
   * [I2C Fabo Shinobiモーター](JetPack3.1/sample/sample_motor.md)
+  * [I2C Fabo #224 VL53L0X 距離センサー](JetPack3.1/sample/sample_vl53l0x.md)
   * [UART シリアル接続](JetPack3.1/sample/sample_uart_serial.md)
   * [WiFi 設定](JetPack3.1/setup/wifi.md)
+  * カスタムボード用カーネルインストール方法
+    * [カスタムカーネル J140](JetPack3.1/custom_kernel/j140.md)
 
