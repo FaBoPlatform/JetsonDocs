@@ -66,6 +66,7 @@ cd /boot/dtb
 ## get DTB from image. [[4]](#4)
 # メモ：/dev/mmcblk0p15が正しいパーティションであることを確認する。デコンパイル出来なければ正しくない。
 # メモ：正しいパーティションであれば、test.dtsとtegra186-quill-p3310-1000-c03-00-base.dtsは同一になる。
+gdisk -l /dev/mmcblk0
 dd if=/dev/mmcblk0p15 of=test.dtb
 dtc -I dtb -O dts -o test.dts test.dtb
 
