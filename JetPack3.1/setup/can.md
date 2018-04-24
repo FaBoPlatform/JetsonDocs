@@ -34,7 +34,7 @@ ip -details -statistics link show can1
 それ以外はあまり役に立たない。
 
 ## 配線
-![](./img/can.jpg)  
+![](./img/can.png)  
 
 * Jetson CAN0 TR - CANdevice1 TR
 * Jetson CAN0 TX - CANdevice1 TX
@@ -96,7 +96,7 @@ ip -details -statistics link show can0
   * CANコントローラが通信エラーを検出したときに、バストラフィックを説教的に廃棄せずにバスオフにします。CANコントローラはバストラフィックに全く関与しなくなります。
 * can state STOPPED
 
-![](./img/can-status.jpg)  
+![](./img/can-status.png)  
 
 
 ## dmesg log確認
@@ -108,7 +108,7 @@ dmesg log
 >[   114.228073] NET: Registered protocol family 29  
 >[   114.243389] can: raw protocol (rev 20120528)  
 
-![](./img/can-dmesg.jpg)  
+![](./img/can-dmesg.png)  
 
 
 ## 動作確認
