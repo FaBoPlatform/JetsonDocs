@@ -34,9 +34,11 @@ ip -details -statistics link show can1
 それ以外はあまり役に立たない。
 
 ## 配線
+TIの3.3V対応チップは3.3Vでよい。5Vでも動作する。
+
 ![](./img/can.png)  
-[J21 PIN](./img/J21-2.png)  
-[J26 PIN](./img/J26-2.png)  
+[J21 PINの詳細図](./img/J21-2.png)  
+[J26 PINの詳細図](./img/J26-2.png)  
 
 
 * Jetson CAN0 TR - CANdevice1 TR
