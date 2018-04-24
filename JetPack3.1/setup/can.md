@@ -34,9 +34,9 @@ ip -details -statistics link show can1
 それ以外はあまり役に立たない。
 
 ## 配線
-![](./img/can.png)  
-![](./img/J21-2.png)
-![](./img/J26-2.png)
+![](./img/can.png | width=450)  
+![](./img/J21-2.png | width=450)
+![](./img/J26-2.png | width=450)
 
 * Jetson CAN0 TR - CANdevice1 TR
 * Jetson CAN0 TX - CANdevice1 TX
