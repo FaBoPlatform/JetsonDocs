@@ -56,14 +56,14 @@ ip -details -statistics link show can1
 
 
 ## setup
-blacklist mttcanをコメントアウトする
+* blacklist mttcanをコメントアウトする
 ```
 sudo vi /etc/modprobe.d/blacklist-mttcan.conf
 ```
 > #blacklist mttcan
 
 
-can0、can1のインターフェースを追加する
+* can0、can1のインターフェースを追加する
 ```
 sudo vi /etc/network/interfaces.d/can0
 ```
@@ -82,7 +82,17 @@ sudo vi /etc/network/interfaces.d/can1
 >up /sbin/ifconfig $IFACE up  
 >down /sbin/ifconfig $IFACE down  
 
-再起動
+
+インターフェース追加しない場合は、再起動の都度下記コマンドでcan0、can1のビットレートを設定して立ち上げる。
+```
+sudo ip link set can0 type can bitrate 500000 dbitrate 2000000 berr-reporting on fd on
+sudo ip link set up can0
+sudo ip link set can1 type can bitrate 500000 dbitrate 2000000 berr-reporting on fd on
+sudo ip link set up can1
+```
+
+
+* 再起動
 ```
 sudo reboot
 ```
@@ -91,6 +101,7 @@ sudo reboot
 ```
 ifconfig -a
 ```
+/etc/modprobe.d/blacklist-mttcan.confのブラックリストをコメントアウトして再起動するとifconfigでcanが表示されるようになる。
 ![](./img/can-ifconfig.png)
 
 
