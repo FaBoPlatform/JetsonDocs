@@ -87,6 +87,13 @@ sudo vi /etc/network/interfaces.d/can1
 sudo reboot
 ```
 
+## ifconfig確認
+```
+ifconfig -a
+```
+![](./img/can-ifconfig.png)
+
+
 
 ## ステータス確認
 ```
