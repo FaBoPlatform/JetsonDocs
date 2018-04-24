@@ -35,8 +35,8 @@ ip -details -statistics link show can1
 
 ## 配線
 ![](./img/can.png)  
-![](./img/j21-2.png)
-![](./img/j26-2.png)
+![](./img/J21-2.png)
+![](./img/J26-2.png)
 
 * Jetson CAN0 TR - CANdevice1 TR
 * Jetson CAN0 TX - CANdevice1 TX
