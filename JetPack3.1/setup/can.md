@@ -36,18 +36,18 @@ ip -details -statistics link show can1
 ## 配線
 ![](./img/can.jpg)  
 
-・Jetson CAN0 TR - CANdevice1 TR
-・Jetson CAN0 TX - CANdevice1 TX
-・Jetson 5V - CANdevice1 VCC 
-・Jetson GND - CANdevice1 GND
+* Jetson CAN0 TR - CANdevice1 TR
+* Jetson CAN0 TX - CANdevice1 TX
+* Jetson 5V - CANdevice1 VCC 
+* Jetson GND - CANdevice1 GND
 
-・Jetson CAN1 TR - CANdevice2 TR
-・Jetson CAN1 TX - CANdevice2 TX
-・Jetson 5V - CANdevice2 VCC 
-・Jetson GND - CANdevice2 GND
+* Jetson CAN1 TR - CANdevice2 TR
+* Jetson CAN1 TX - CANdevice2 TX
+* Jetson 5V - CANdevice2 VCC 
+* Jetson GND - CANdevice2 GND
 
-・CANdevice1 CANH - CANdevie2 CANH
-・CANdevice1 CANL - CANdevie2 CANL
+* CANdevice1 CANH - CANdevie2 CANH
+* CANdevice1 CANL - CANdevie2 CANL
 
 
 ## setup
@@ -62,20 +62,20 @@ can0、can1のインターフェースを追加する
 ```
 sudo vi /etc/network/interfaces.d/can0
 ```
->auto can0
->iface can0 inet manual
->pre-up /sbin/ip link set $IFACE type can bitrate 500000 dbitrate 2000000 berr-reporting on fd on
->up /sbin/ifconfig $IFACE up
->down /sbin/ifconfig $IFACE down
+>auto can0  
+>iface can0 inet manual  
+>pre-up /sbin/ip link set $IFACE type can bitrate 500000 dbitrate 2000000 berr-reporting on fd on  
+>up /sbin/ifconfig $IFACE up  
+>down /sbin/ifconfig $IFACE down  
 
 ```
 sudo vi /etc/network/interfaces.d/can1
 ```
->auto can1
->iface can1 inet manual
->pre-up /sbin/ip link set $IFACE type can bitrate 500000 dbitrate 2000000 berr-reporting on fd on
->up /sbin/ifconfig $IFACE up
->down /sbin/ifconfig $IFACE down
+>auto can1  
+>iface can1 inet manual  
+>pre-up /sbin/ip link set $IFACE type can bitrate 500000 dbitrate 2000000 berr-reporting on fd on  
+>up /sbin/ifconfig $IFACE up  
+>down /sbin/ifconfig $IFACE down  
 
 再起動
 ```
@@ -95,7 +95,6 @@ ip -details -statistics link show can0
 * can state BUSS-OFF
   * CANコントローラが通信エラーを検出したときに、バストラフィックを説教的に廃棄せずにバスオフにします。CANコントローラはバストラフィックに全く関与しなくなります。
 * can state STOPPED
-  * 
 
 ![](./img/can-status.jpg)  
 
@@ -105,9 +104,9 @@ ip -details -statistics link show can0
 dmesg log
 ```
 通信が成功すれば、以下のようなログになる。
->[   114.221833] can: controller area network core (rev 20120528 abi 9)
->[   114.228073] NET: Registered protocol family 29
->[   114.243389] can: raw protocol (rev 20120528)
+>[   114.221833] can: controller area network core (rev 20120528 abi 9)  
+>[   114.228073] NET: Registered protocol family 29  
+>[   114.243389] can: raw protocol (rev 20120528)  
 
 ![](./img/can-dmesg.jpg)  
 
@@ -121,7 +120,7 @@ cansend can0 123#abcdabcd
 ```
 candump can1
 ```
->  can1  123   [4]  AB CD AB CD
+>  can1  123   [4]  AB CD AB CD  
 
 
 ## 参考

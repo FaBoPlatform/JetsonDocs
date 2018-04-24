@@ -25,6 +25,7 @@
     * [距離センサー LidarLiteV3](JetPack3.1/setup/libfabo/lidarlitev3.md)
     * [距離センサー VL53L0X](JetPack3.1/setup/libfabo/vl53l0x.md)
   * [SPIdev 有効化](JetPack3.1/setup/spidev.md)
+  * [CAN 有効化](JetPack3.1/setup/can.md)
   * [SPI Fabo #103 ボタン](JetPack3.1/sample/sample_spi_103.md)
   * [SPI Fabo #104 回転センサー](JetPack3.1/sample/sample_spi_104.md)
   * [I2C Fabo #210 LED](JetPack3.1/sample/sample_led.md)
