@@ -5,7 +5,7 @@ from subprocess import Popen
 
 try:
     cmd = "cansend can0 123#abcdabcd"
-    proc = Popen(cmd,shell=True)
+    proc = Popen(cmd, shell=True)
     proc.wait()
 except:
     import traceback
