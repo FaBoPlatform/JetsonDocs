@@ -132,14 +132,14 @@ reboot
 ```
 lsmod
 ```
->Module                  Size  Used by
->fuse                   82192  2
->mttcan                 48918  0
->bcmdhd               7441739  0
->can_dev                11882  1 mttcan
+>Module                  Size  Used by  
+>fuse                   82192  2  
+>mttcan                 48918  0  
+>bcmdhd               7441739  0  
+>can_dev                11882  1 mttcan  
 >spidev                  9920  0 ←これが出現した  
->pci_tegra              60038  0
->bluedroid_pm           11195  0
+>pci_tegra              60038  0  
+>bluedroid_pm           11195  0  
 ```
 ls /dev/spi*
 ```
