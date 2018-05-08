@@ -2,14 +2,20 @@
 Jetson TX2 Docs>JetPack3.1>UARTシリアル接続
 <hr>
 
+# メモ
+* 文字化けする場合は、MAX3232が壊れている
 
 # 接続確認
 ターミナル操作はPC側で行い、JetsonTX2側はピンを挿すだけ。
 1. USB-TTLシリアルコンソール変換ケーブルを用意する  
 MAX3232とBSUSRC06  
 ![](./img/max3232-bsusrc06.jpg)
+SPARKFUN FTDI Basic
+![](./img/sparkfun_ftdi_basic.jpg)
 
 2. 接続する TXとRXはクロス接続
+#### MAX3232のVCCはINなのでTX2と接続する。しかしSPARKFUNのVCCはOUTなので接続しないこと。  
+Jetson TX2 J21 Pin 4 (5V) → MAX3232 VCC  
 Jetson TX2 J21 Pin 8 (UART 1 TXD) → MAX3232 RX  
 Jetson TX2 J21 Pin 10 (UART 1 RXD) → MAX3232 TX  
 Jetson TX2 J21 Pin 9 (GND) → MAX3232 GND  
