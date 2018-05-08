@@ -8,7 +8,8 @@ Jetson TX2 Docs>JetPack3.1>UARTシリアル接続
 1. USB-TTLシリアルコンソール変換ケーブルを用意する  
 MAX3232とBSUSRC06  
 ![](./img/max3232-bsusrc06.jpg)
-2. 接続する TXとRXはストレート接続
+
+2. 接続する TXとRXはストレート接続  
 Jetson TX2 J21 Pin 8 (UART 1 TXD) → MAX3232 TX  
 Jetson TX2 J21 Pin 10 (UART 1 RXD) → MAX3232 RX  
 Jetson TX2 J21 Pin 9 (GND) → MAX3232 GND  
