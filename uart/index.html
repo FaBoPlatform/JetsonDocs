@@ -238,6 +238,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample" title="Sample" class="md-nav__link">
+    Sample
+  </a>
+  
+</li>
+      
       
       
       
@@ -274,6 +281,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample" title="Sample" class="md-nav__link">
+    Sample
+  </a>
+  
+</li>
+      
       
       
       
@@ -304,6 +318,17 @@
 </pre></div></td></tr></table></p>
 <p>J21端子8ピン(TX),10ピン(RX)が/dev/TTS0。
  J17 UART端子が/dev/TTYHS2。</p>
+<h2 id="sample">Sample</h2>
+<p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre>1
+2
+3
+4
+5</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=kn>import</span> <span class=nn>serial</span>
+
+<span class=n>ser</span> <span class=o>=</span> <span class=n>serial</span><span class=o>.</span><span class=n>Serial</span><span class=p>(</span><span class=s1>&#39;/dev/ttyTHS0&#39;</span><span class=p>,</span> <span class=mi>115200</span><span class=p>)</span>
+<span class=n>ser</span><span class=o>.</span><span class=n>write</span><span class=p>(</span><span class=s2>&quot;TEST&quot;</span><span class=o>.</span><span class=n>encode</span><span class=p>())</span>
+<span class=n>ser</span><span class=o>.</span><span class=n>close</span><span class=p>()</span>
+</pre></div></td></tr></table></p>
                 
                   
                 
